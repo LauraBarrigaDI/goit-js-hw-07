@@ -32,8 +32,10 @@ galleryContainer.addEventListener('click', event => {
 });
 
 const lightbox = new SimpleLightbox('.gallery a', {
+  nav: true,
   captions: true,
   captionDelay: 250,
-  captionsData: 'alt',
+  captionsData: galleryImage.alt,
+  close: true,
   enableKeyboard: true,
 });
