@@ -18,19 +18,6 @@ galleryItems.forEach(item => {
   galleryContainer.appendChild(galleryItem);
 });
 
-galleryContainer.addEventListener('click', event => {
-  event.preventDefault();
-  
-  const galleryImage = event.target.closest('.gallery__image');
-  
-  if (galleryImage) {
-    const largeImageUrl = galleryImage.dataset.source;
-    
-    const modal = basicLightbox.create(`<img src="${largeImageUrl}">`);
-    modal.show();
-  }
-});
-
 const lightbox = new SimpleLightbox('.gallery a', {
   nav: true,
   captions: true,
