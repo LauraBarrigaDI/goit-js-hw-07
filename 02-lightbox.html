@@ -9,29 +9,23 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css"
-      integrity="sha512-Tk+h97nNfJdkSdR/wyogUVj9X4sMg3IX4h1cQ2BvODKg0YulhJd37BWTanRtL9XtFxznttStwbDxh7nvphPh+w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.css"
     />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
     <!-- Add gallery items to this list -->
-    <ul class="gallery">
-      <a class="gallery__item" href="large-image.jpg">
-  <img class="gallery__image" src="small-image.jpg" alt="Image description" />
-</a>
-      
-    </ul>
+    <div class="gallery">
+      <template id="gallery-item-template">
+        <a class="gallery__link" href="">
+          <img class="gallery__image" src="" data-source="" alt="" />
+        </a>
+      </template>
+    </div>
 
-    <script src="js/02-lightbox.js" type="module"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"
-      integrity="sha512-1+nKMnWc6UspL6UkR6vGTTfPg01tdjf3Kl3rI2HsgU6DpZ6zopEuX0jK1zQ28rIqB3qo0P/eJUkMxuP5ZCPV7Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="js/01-gallery.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.js"></script>
   </body>
 </html>
