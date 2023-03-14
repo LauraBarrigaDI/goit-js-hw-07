@@ -6,5 +6,5 @@ const gallery = document.querySelector('.gallery');
 const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
   captionDelay: 250,
-  captionsData: 'alt',
+  captionsData: 'description',
 });
