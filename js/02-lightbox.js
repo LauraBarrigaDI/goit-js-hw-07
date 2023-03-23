@@ -1,7 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-import 'node_modules/simplelightbox/dist/simple-lightbox.min.css';
-
 const galleryContainer = document.querySelector('.gallery');
 let galleryMarkup = '';
 
