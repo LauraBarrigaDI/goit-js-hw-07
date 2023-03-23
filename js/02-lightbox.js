@@ -1,10 +1,28 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
-const gallery = document.querySelector('.gallery');
+const galleryContainer = document.querySelector('.gallery');
+let galleryMarkup = '';
+
+galleryItems.forEach(({ preview, original, description }) => {
+  galleryMarkup += `
+  <ul class="gallery">
+    <li class="gallery__item">
+      <a class="gallery__link" href="${original}">
+        <img class="gallery__image" src="${preview}" alt="${description}" />
+      </a>
+    </li>
+  </ul>
+  `;
+  
+});
+
+galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
+
 const lightbox = new SimpleLightbox('.gallery a', {
+  overlay: true,
+  overlayOpacity: 0.7,
   captions: true,
-  captionDelay: 250,
   captionsData: 'alt',
+  captionDelay: 250,
 });

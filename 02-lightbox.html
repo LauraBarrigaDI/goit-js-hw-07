@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SimpleLightbox library</title>
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css"
-      integrity="sha512-Tk+h97nNfJdkSdR/wyogUVj9X4sMg3IX4h1cQ2BvODKg0YulhJd37BWTanRtL9XtFxznttStwbDxh7nvphPh+w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simplelightbox.min.css"
     />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
     <!-- Add gallery items to this list -->
     <ul class="gallery">
-      
+      <template class="gallery__item">
+        <a class="gallery__link" href="">
+          <img class="gallery__image" src="" data-source="" alt="" />
+        </a>
+      </template>
     </ul>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"></script>
     <script src="js/02-lightbox.js" type="module"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"
-      integrity="sha512-1+nKMnWc6UspL6UkR6vGTTfPg01tdjf3Kl3rI2HsgU6DpZ6zopEuX0jK1zQ28rIqB3qo0P/eJUkMxuP5ZCPV7Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </body>
 </html>

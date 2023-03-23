@@ -42,3 +42,10 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+
+
+.sl-caption {
+  color: white;
+  background-color:rgba(0, 0, 0, 0.8);
+}
