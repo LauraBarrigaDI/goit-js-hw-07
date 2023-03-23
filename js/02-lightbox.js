@@ -14,7 +14,6 @@ galleryItems.forEach(({ preview, original, description }) => {
     </li>
   </ul>
   `;
-  
 });
 
 galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
